@@ -2,7 +2,7 @@
 YOLO-TransT: Recognition and tracking of estrus cow based on improved YOLOv8n and TransT models  
 [Effect display](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Effect%20display.mp4)  
 <video width="600" controls>
-  <source src="https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Effect%20display.mp4" type="video/mp4">
+  <source src="https://www.bilibili.com/video/BV1wu4y1K7iM/?spm_id_from=333.337.search-card.all.click&vd_source=d68da64987fce61a59890c929d25cd3d" type="video/mp4">
   Your browser does not support the video tag.
 </video>  
   
