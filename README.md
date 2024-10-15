@@ -1,6 +1,10 @@
 # YOLO-TransT ![](https://img.shields.io/badge/contributor-ZhengWang-brightgreen.svg)  
 YOLO-TransT: Recognition and tracking of estrus cow based on improved YOLOv8n and TransT models  
-[Effect display]()  
+[Effect display](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Effect%20display.mp4)  
+<video width="600" controls>
+  <source src="[https://your-storage-service.com/video.mp4](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Effect%20display.mp4)" type="video/mp4">
+  Your browser does not support the video tag.
+</video>  
   
 ### 1.Abstract  
 Real-time monitoring of estrus cows is labor-intensive and time-consuming for dairy farming. To achieve accurate recognition and real-time positioning of estrus cows in natural scenes, a model named YOLO-TransT, integrating the improved You Only Look Once v8 Nano (YOLOv8n) and Transformer Tracking (TransT) models, was proposed for estrus cow recognition and tracking. Firstly, the estrus cows were directly labelled, enabling accurate recognition and providing an initial bounding box for subsequent tracking. Secondly, the Context Augmentation Module (CAM) was incorporated into YOLOv8n to improve the model’s focus on estrus cow by associating with mounting behavior scenes. Thirdly, the Squeeze-and-Excitation (SE) module was introduced to boost the network’s learning ability and suppress redundant features. Finally, the improved YOLOv8n was integrated with the TransT to achieve recognition and tracking of the estrus cow. The experimental results showed that in the detection part of the YOLO-TransT model, the improved YOLOv8n had an Average Precision of estrus (APestrus) of 92.60%, an F1-score of 92.00%, 3.14 M parameters, 9.70 G Floating-point Operations (FLOPs), and a detection speed of 7.0 ms/frame. Compared to the original YOLOv8n, the improved YOLOv8n had increased APestrus by 4.10% and F1-score by 3.25%, while keeping the parameters, FLOPs, and detection speed essentially unchanged; In the tracking part, the TransT model had a tracking success rate of 70.3% and an accuracy rate of 85.5%. In conclusion, the YOLO-TransT can accurately recognize and track estrus cows in natural scenes, laying the foundation for intelligent livestock breeding.  
