@@ -4,7 +4,7 @@ YOLO-TransT: Recognition and tracking of estrus cow based on improved YOLOv8n an
 Click the follow picture, please:
 
 [![Video Title](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/demo_pictrue.jpg)](https://www.bilibili.com/video/BV1wu4y1K7iM/?spm_id_from=333.337.search-card.all.click&vd_source=d68da64987fce61a59890c929d25cd3d)  
-You can also download the video [HERE]([https://www.bilibili.com/video/BV1wu4y1K7iM/?spm_id_from=333.337.search-card.all.click&vd_source=d68da64987fce61a59890c929d25cd3d](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Effect%20display.mp4))   
+You can also download the origin video [HERE]((https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Effect%20display.mp4))   
 
  
 ### 1.Abstract  
