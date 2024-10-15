@@ -1,8 +1,10 @@
 # YOLO-TransT ![](https://img.shields.io/badge/contributor-ZhengWang-brightgreen.svg)  
 YOLO-TransT: Recognition and tracking of estrus cow based on improved YOLOv8n and TransT models  
-[Effect display](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Effect%20display.mp4)  
-[![Video Title](https://github.com/XingshiXu/CAAID/blob/main/Example%20image1.jpg)](https://www.bilibili.com/video/BV1wu4y1K7iM/?spm_id_from=333.337.search-card.all.click&vd_source=d68da64987fce61a59890c929d25cd3d)
 
+Click the follow picture, please:
+
+[![Video Title](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/demo_pictrue.jpg)](https://www.bilibili.com/video/BV1wu4y1K7iM/?spm_id_from=333.337.search-card.all.click&vd_source=d68da64987fce61a59890c929d25cd3d)  
+You can also download the video [HERE]([https://www.bilibili.com/video/BV1wu4y1K7iM/?spm_id_from=333.337.search-card.all.click&vd_source=d68da64987fce61a59890c929d25cd3d](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Effect%20display.mp4))   
 
  
 ### 1.Abstract  
@@ -24,12 +26,12 @@ We proposed an automatic detection and tracking algorithm for estrus cows in far
 (2) 通过引入CAM和SE注意力机制，改进YOLOv8n模型，增强了对发情奶牛的场景关联以及重要特征的学习能力，实现了更高的检测精度。  
 (3) 将改进的YOLOv8n和TransT融合算法成功部署，设计了一套发情奶牛监测预警系统，实现了发情行为的实时监测与告警功能，具备实际应用价值。  
 (4) 所提出的系统兼具高精度、实时性与轻量化特点，可有效满足大规模养殖场发情奶牛监测的需求，并提升精细化管理水平。
-
-### 5.Results  
   
-### 6. Data
-To find the dataset used in this study, please make sure all files are downloaded from:  
-XXXXXXXXX
+### 5.Results  
+![结果](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Results.jpg)  
+ 
+### 6. Data  
+To find the dataset used in this study, please make sure all files are downloaded from [HERE]():  
 **Extraction code**：please email at wang_zheng@nwafu.edu.cn  
   
   
