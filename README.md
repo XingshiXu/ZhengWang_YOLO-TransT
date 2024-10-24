@@ -31,16 +31,18 @@ We proposed an automatic detection and tracking algorithm for estrus cows in far
   
 ### 5.Results  
 ![结果](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Results.jpg)  
- [Effect display](https://www.youtube.com/watch?v=HqnjuRifMD8&t=86s)    
-https://www.youtube.com/watch?v=HqnjuRifMD8&t=86s   
+![结果00](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/results01.png)  
+ [Performance display：](https://www.youtube.com/watch?v=HqnjuRifMD8&t=86s) https://www.youtube.com/watch?v=HqnjuRifMD8&t=86s     
+[![Video Title](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/TuBiao.png)](https://www.youtube.com/watch?v=HqnjuRifMD8&t=86s)  
+
  
 
   
 ### 6. Data  
 To find the dataset used in this study, please make sure all files are downloaded from [HERE](https://pan.baidu.com/s/1675c35QjB4OXbnwClF0zwQ):  
-https://pan.baidu.com/s/1675c35QjB4OXbnwClF0zwQ
-**Extraction code**：please email at wang_zheng@nwafu.edu.cn  
-(Since the manuscript of our research is still under review, the data related to this research will be open sourced here after the manuscript is published.)
+https://pan.baidu.com/s/1675c35QjB4OXbnwClF0zwQ  
+**Extraction code**：please email at wang_zheng@nwafu.edu.cn   
+(Since the manuscript of our research is still under review, the data related to this research will be open sourced here after the manuscript is published.)  
 
   
   
