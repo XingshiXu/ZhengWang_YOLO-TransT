@@ -1,5 +1,5 @@
 # YOLO-TransT ![](https://img.shields.io/badge/contributor-ZhengWang-brightgreen.svg)  
-YOLO-TransT: Recognition and tracking of estrus cow based on improved YOLOv8n and TransT models  
+YOLO-TransT: Detection and tracking of estrus cow based on improved YOLOv8n and TransT models  
 
 **Click** the followed video, please:  
 [![Video Title](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/demo_pictrue.jpg)](https://www.youtube.com/watch?v=HqnjuRifMD8&t=86s)  
