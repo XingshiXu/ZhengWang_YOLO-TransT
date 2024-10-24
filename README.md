@@ -32,7 +32,7 @@ We proposed an automatic detection and tracking algorithm for estrus cows in far
 ### 5.Results  
 ![结果](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Results.jpg)  
 ![结果00](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/results01.png)  
- [Performance display：](https://www.youtube.com/watch?v=HqnjuRifMD8&t=86s) https://www.youtube.com/watch?v=HqnjuRifMD8&t=86s     
+ [**Performance display：**](https://www.youtube.com/watch?v=HqnjuRifMD8&t=86s) https://www.youtube.com/watch?v=HqnjuRifMD8&t=86s     
 [![Video Title](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/TuBiao.png)](https://www.youtube.com/watch?v=HqnjuRifMD8&t=86s)  
 
  
