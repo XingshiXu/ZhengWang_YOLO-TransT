@@ -51,8 +51,8 @@ pip install shapely==1.6.4.post2
 1. Place the downloaded dataset or your own dataset in the ```YOLO-TransT/Detection/Dataset folder```;  
 2. Configure the relevant file paths required for running the YOLO model. Please refer to https://github.com/ultralytics/ultralytics;  
 3. Train the detection model: ```run Detection/ultralytics/yolo/v8/detect/my_train.py```.  
-4. Download the pre-trained weights of the tracking model (you can download it from the [**Google Drive**](https://drive.google.com/drive/folders/141ugLESIekckWuz_2YrEqxBS9Tpjxx-i?usp=drive_link ) or [**Baidu Netdisk**](https://pan.baidu.com/s/1OpxwcvfrQ8b0rWomOy7WIg) (**Extraction Code**: ed35) and put it in the Tracking/ltr/checkpoints folder;; 
-5. Configure the detection model weights and tracking model weights address, run Demo: ```detection/ultralytics/yolo/v8/detect/my_predict.py```.  
+4. Download the pre-trained weights of the tracking model (you can download it from the [**Google Drive**](https://drive.google.com/drive/folders/141ugLESIekckWuz_2YrEqxBS9Tpjxx-i?usp=drive_link ) or [**Baidu Netdisk**](https://pan.baidu.com/s/1OpxwcvfrQ8b0rWomOy7WIg) (**Extraction Code**: ed35) and put it in the Tracking/ltr/checkpoints folder;  
+5. Configure the detection model weights and tracking model weights address, run Demo: ```Detection/ultralytics/yolo/v8/detect/my_predict.py```.  
     
 ### 7. Dataset  
 In order to promote communication in the scientific community, the full code is uploaded in this study; since the project funded by this research grant has not yet been completed, part of the dataset is temporarily uploaded for researchers and enthusiasts to communicate, and the rest of the data will be uploaded in full after the project is completed.  
