@@ -57,8 +57,7 @@ pip install shapely==1.6.4.post2
 ### 7. Dataset  
 In order to promote communication in the scientific community, the full code is uploaded in this study; since the project funded by this research grant has not yet been completed, part of the dataset is temporarily uploaded for researchers and enthusiasts to communicate, and the rest of the data will be uploaded in full after the project is completed.  
   
-To find the dataset used in this study, please make sure all files are downloaded from [**Google_Drive**](https://drive.google.com/drive/folders/141ugLESIekckWuz_2YrEqxBS9Tpjxx-i?usp=drive_link) or [**Baidu_Netdisk**](https://pan.baidu.com/s/1OpxwcvfrQ8b0rWomOy7WIg):  
-**Extraction code**：please email at wang_zheng@nwafu.edu.cn   
+To find the dataset used in this study, please make sure all files are downloaded from [**Google_Drive**](https://drive.google.com/drive/folders/141ugLESIekckWuz_2YrEqxBS9Tpjxx-i?usp=drive_link) or [**Baidu_Netdisk**](https://pan.baidu.com/s/1OpxwcvfrQ8b0rWomOy7WIg)(**Extraction code**：ed35)
   
 ### 8.Results  
 ![结果](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Results.jpg)  
