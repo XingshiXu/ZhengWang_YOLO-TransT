@@ -25,12 +25,8 @@ We proposed an automatic detection and tracking algorithm for estrus cows in far
 (3) A dairy cow estrus monitoring and warning system was designed based on the YOLO-TransT model, which could effectively meet the dairy cow estrus monitoring needs of large-scale farms and improve the level of refined management.  
 
   
-### 5.Results  
-![结果](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Results.jpg)  
-![结果00](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/results01.png)  
- [**Performance display：**](https://www.youtube.com/watch?v=cj_6e8dhBjo) https://www.youtube.com/watch?v=cj_6e8dhBjo  
 
-### 6. Enviornment   
+### 5. Enviornment   
  ```
 # Create and activate Conda environment
 conda create -n yolo_transt python=3.7
@@ -51,18 +47,25 @@ pip install pycocotools jpeg4py
 pip install wget yacs
 pip install shapely==1.6.4.post2
 ```  
-### 7. Quick Start   
-1. Place the downloaded dataset or your own dataset in the YOLO-TransT/Detection/Dataset folder;  
+### 6. Quick Start   
+1. Place the downloaded dataset or your own dataset in the ```YOLO-TransT/Detection/Dataset folder```;  
 2. Configure the relevant file paths required for running the YOLO model. Please refer to https://github.com/ultralytics/ultralytics;  
-3. Train the detection model: run Detection/ultralytics/yolo/v8/detect/my_train.py.  
-4. Download the pre-trained weights of the tracking model (you can download it from the last link) and put it in the Tracking/ltr/checkpoints folder;  
-5. Configure the detection model weights and tracking model weights address, run Demo: detection/ultralytics/yolo/v8/detect/my_predict.py.  
+3. Train the detection model: ```run Detection/ultralytics/yolo/v8/detect/my_train.py```.  
+4. 4. Download the pre-trained weights of the tracking model (you can download it from the [**Google Drive**](https://drive.google.com/drive/folders/141ugLESIekckWuz_2YrEqxBS9Tpjxx-i?usp=drive_link ) or [**Baidu Netdisk**](https://pan.baidu.com/s/1OpxwcvfrQ8b0rWomOy7WIg) (Code: ed35) and put it in the Tracking/ltr/checkpoints folder;;  
+5. Configure the detection model weights and tracking model weights address, run Demo: ```detection/ultralytics/yolo/v8/detect/my_predict.py```.  
     
-### 8. Data  
+### 7. Dataset  
 In order to promote communication in the scientific community, the full code is uploaded in this study; since the project funded by this research grant has not yet been completed, part of the dataset is temporarily uploaded for researchers and enthusiasts to communicate, and the rest of the data will be uploaded in full after the project is completed.  
-To find the dataset used in this study, please make sure all files are downloaded from [Google_link](https://drive.google.com/drive/folders/1KYBGMNWu0rnJFlbd-4HYDdg0PZXs5lHQ?usp=drive_link) or [Baidu_disk](https://pan.baidu.com/s/1675c35QjB4OXbnwClF0zwQ):  
+  
+To find the dataset used in this study, please make sure all files are downloaded from [**Google_Drive**](https://drive.google.com/drive/folders/141ugLESIekckWuz_2YrEqxBS9Tpjxx-i?usp=drive_link) or [**Baidu_Netdisk**](https://pan.baidu.com/s/1OpxwcvfrQ8b0rWomOy7WIg):  
 **Extraction code**：please email at wang_zheng@nwafu.edu.cn   
-
+  
+### 8.Results  
+![结果](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Results.jpg)  
+![结果00](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/results01.png)  
+ [**Performance display：**](https://www.youtube.com/watch?v=cj_6e8dhBjo) https://www.youtube.com/watch?v=cj_6e8dhBjo  
   
   
-
+### 9. Reference
+https://github.com/ultralytics/ultralytics   
+https://github.com/chenxin-dlut/TransT 
