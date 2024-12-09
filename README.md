@@ -51,7 +51,7 @@ pip install shapely==1.6.4.post2
 1. Place the downloaded dataset or your own dataset in the ```YOLO-TransT/Detection/Dataset folder```;  
 2. Configure the relevant file paths required for running the YOLO model. Please refer to https://github.com/ultralytics/ultralytics;  
 3. Train the detection model: ```run Detection/ultralytics/yolo/v8/detect/my_train.py```.  
-4. 4. Download the pre-trained weights of the tracking model (you can download it from the [**Google Drive**](https://drive.google.com/drive/folders/141ugLESIekckWuz_2YrEqxBS9Tpjxx-i?usp=drive_link ) or [**Baidu Netdisk**](https://pan.baidu.com/s/1OpxwcvfrQ8b0rWomOy7WIg) (Code: ed35) and put it in the Tracking/ltr/checkpoints folder;;  
+4. 4. Download the pre-trained weights of the tracking model (you can download it from the [**Google Drive**](https://drive.google.com/drive/folders/141ugLESIekckWuz_2YrEqxBS9Tpjxx-i?usp=drive_link ) or [**Baidu Netdisk**](https://pan.baidu.com/s/1OpxwcvfrQ8b0rWomOy7WIg) (**Extraction Code**: ed35) and put it in the Tracking/ltr/checkpoints folder;;  
 5. Configure the detection model weights and tracking model weights address, run Demo: ```detection/ultralytics/yolo/v8/detect/my_predict.py```.  
     
 ### 7. Dataset  
@@ -64,8 +64,3 @@ To find the dataset used in this study, please make sure all files are downloade
 ![结果](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Results.jpg)  
 ![结果00](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/results01.png)  
  [**Performance display：**](https://www.youtube.com/watch?v=cj_6e8dhBjo) https://www.youtube.com/watch?v=cj_6e8dhBjo  
-  
-  
-### 9. Reference
-https://github.com/ultralytics/ultralytics   
-https://github.com/chenxin-dlut/TransT 
