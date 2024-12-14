@@ -19,21 +19,19 @@ from pysot_toolkit.toolkit.evaluation import OPEBenchmark, AccuracyRobustnessBen
 from pysot_toolkit.toolkit.visualization import draw_success_precision
 import numpy as np
 parser = argparse.ArgumentParser(description='transt evaluation')
-parser.add_argument('--tracker_path', '-p', type=str, default='/media/test/WZ/02_YOLOv8_Transt/yolov8_transt/TransT/results',
-                    help='tracker result path')                     #1.test.py跑出来的结果results存放路径
+parser.add_argument('--tracker_path', '-p', type=str, default='',
+                    help='tracker result path')                    
 parser.add_argument('--dataset', '-d', type=str, default='OTB2015',
-                    help='dataset name')                            #2.下一级路径
-# parser.add_argument('--dataset', '-d', type=str, default='OTB2015_Conditions',
-#                     help='dataset name')                            #2.下一级路径
+                    help='dataset name')                           
+
 
 parser.add_argument('--num', '-n', default=1, type=int,
                     help='number of th'
                          'read to eval')
 
 parser.add_argument('--tracker_prefix', '-t', default='OTB2015',
-                    type=str, help='tracker name')                  #3.下一级路径
-# parser.add_argument('--tracker_prefix', '-t', default='OTB2015_General_Occlusion',
-#                       type=str, help='tracker name')
+                    type=str, help='tracker name')               
+
 
 parser.add_argument('--show_video_level', '-s', dest='show_video_level',
                     action='store_true')
@@ -52,9 +50,9 @@ def main():
     assert len(trackers) > 0
     args.num = min(args.num, len(trackers))
 
-    # root = os.path.realpath(os.path.join(os.path.dirname(__file__),
-    #                                      'testing_dataset'))
-    root = '/media/test/WZ/02_YOLOv8_Transt/dataset'  #4.自己数据集的路径(包含json文件),程序会在这个路径下根据跟踪器名称寻找
+    root = os.path.realpath(os.path.join(os.path.dirname(__file__),
+                                         'testing_dataset'))
+ 
     root = os.path.join(root, args.dataset)
     if 'OTB2015' in args.dataset:
         dataset = OTBDataset(args.dataset, root)
