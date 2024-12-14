@@ -3,7 +3,7 @@ class EnvironmentSettings:
         self.workspace_dir = ''    # Base directory for saving network checkpoints.
         self.tensorboard_dir = self.workspace_dir + '/tensorboard/'    # Directory for tensorboard files.
         self.lasot_dir = ''
-        self.got10k_dir = '/media/test/WZ/02_YOLOv8_Transt/dataset/got_10k/train_data'
+        self.got10k_dir = ''
         self.trackingnet_dir = ''
         self.coco_dir = ''
         self.lvis_dir = ''
