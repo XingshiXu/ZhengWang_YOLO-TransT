@@ -11,3 +11,4 @@ experiment = ExperimentGOT10k(
     report_dir='reports'  # where to store evaluation reports
 )
 experiment.report(['transt'])
+
