@@ -37,11 +37,9 @@ args = parser.parse_args()
 torch.set_num_threads(1)
 
 def main():
-    # load config
-    #1.改测试集的路径和权重      the results are reserved in "/media/test/WZ/02_YOLOv8_Transt/yolov8_transt/TransT/pysot_toolkit/results"
-    # dataset_root = r'/media/test/WZ/02_YOLOv8_Transt/dataset/OTB2015/' #Absolute path of the dataset   #all dateset
-    dataset_root = r'/media/test/WZ/02_YOLOv8_Transt/dataset/OTB2015_conditions/Occlusion/General_Occlusion/'  # Absolute path of the dataset   #conditions dataset
-    net_path = r'/media/test/WZ/02_YOLOv8_Transt/yolov8_transt/TransT/ltr/checkpoints/checkpoints_official/transt.pth' #Absolute path of the model
+
+    dataset_root = r''  # Absolute path of the dataset   #conditions dataset
+    net_path = r'' #Absolute path of the model
 
     # create model
     net = NetWithBackbone(net_path=net_path, use_gpu=True)
