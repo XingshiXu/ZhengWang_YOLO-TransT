@@ -5,8 +5,8 @@ task: detect  # YOLO task, i.e. detect, segment, classify, pose
 mode: train  # YOLO mode, i.e. train, val, predict, export, track, benchmark
 
 # Train settings -------------------------------------------------------------------------------------------------------
-model: /media/test/WZ/02_YOLOv8_Transt/yolov8/ultralytics/models/v8/2/yolov8n_CAM_SE.yaml  # path to model file, i.e. yolov8n.pt, yolov8n.yaml
-data: /media/test/WZ/02_YOLOv8_Transt/yolov8/ultralytics/datasets/coco128.yaml # path to data file, i.e. coco128.yaml
+model:  # path to model file, i.e. yolov8n.pt, yolov8n.yaml
+data: # path to data file, i.e. coco128.yaml
 epochs: 300  # number of epochs to train for
 patience: 300  # epochs to wait for no observable improvement for early stopping of training
 batch: 1  # number of images per batch (-1 for AutoBatch)
