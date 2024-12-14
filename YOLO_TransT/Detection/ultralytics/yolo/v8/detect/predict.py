@@ -60,7 +60,7 @@ class DetectionPredictor(BasePredictor):
 
         # transT
         first_frame = True
-        count = 1  # 用于记录连续多少帧判断为estrus
+        count = 1  
         current_frame_num = 0
 
         boxes = []
