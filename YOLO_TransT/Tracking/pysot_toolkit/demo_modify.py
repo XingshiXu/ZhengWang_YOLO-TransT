@@ -18,8 +18,6 @@ import torch
 import numpy as np
 from glob import glob
 from pysot_toolkit.bbox import get_axis_aligned_bbox
-# from pysot_toolkit.toolkit.datasets import DatasetFactory
-# from pysot_toolkit.toolkit.utils.region import vot_overlap, vot_float2str
 from pysot_toolkit.trackers.tracker import Tracker
 from pysot_toolkit.trackers.net_wrappers import NetWithBackbone
 
@@ -69,8 +67,8 @@ def get_frames(video_name):
 def main():
     # load config
 
-    #dataset_root = r'/home/test/wz/dataset/OTB2015/' #Absolute path of the dataset
-    net_path = r'/media/test/WZ/02_YOLOv8_Transt/yolov8_transt/TransT/ltr/checkpoints/checkpoints_official/transt_N2.pth' #Absolute path of the model
+
+    net_path = '' #Absolute path of the model
 
     # create model
     net = NetWithBackbone(net_path=net_path, use_gpu=True)
@@ -82,7 +80,7 @@ def main():
     pred_bboxes = []
     scores = []
     track_times = []
-    video = '/media/test/WZ/02_YOLOv8_Transt/yolov8_transt/00100.mp4'
+    video = ''
     idx = 0
     for img in get_frames(video):
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -109,10 +107,9 @@ def main():
             cv2.destroyAllWindows()
         if idx > 0:
             img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-            # gt_bbox = list(map(int, gt_bbox))
+           
             pred_bbox = list(map(int, pred_bbox))
-            # cv2.rectangle(img, (gt_bbox[0], gt_bbox[1]),
-            #               (gt_bbox[0]+gt_bbox[2], gt_bbox[1]+gt_bbox[3]), (0, 255, 0), 3)
+
             cv2.rectangle(img, (pred_bbox[0], pred_bbox[1]),
                           (pred_bbox[0]+pred_bbox[2], pred_bbox[1]+pred_bbox[3]), (0, 255, 255), 3)
             cv2.putText(img, str(idx), (40, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
