@@ -17,7 +17,7 @@ import argparse
 import os
 
 
-sys.path.append('/home/test/wz/TransT')  # 添加到python的搜索路径
+sys.path.append(' ')  #Add Path
 import cv2
 import torch
 import numpy as np
@@ -28,9 +28,9 @@ from pysot_toolkit.trackers.net_wrappers import NetWithBackbone
 
 from ultralytics.yolo.engine.model import YOLO
 if __name__=="__main__":
-    model=YOLO("/media/test/WZ/02_YOLOv8_Transt/yolov8_transt/yolov8/ultralytics/yolo/v8/detect/best.pt")
+    model=YOLO(" ")             #Path of detecting weight 
     model.predict(
-                  source="/media/test/WZ/02_YOLOv8_Transt/dataset/1/video/00097.mp4",                                      #test video
+                  source=" ",                                      #Path of test video
                   conf=0.7,
                   save_txt=True,
                   save=True
