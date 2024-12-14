@@ -6,7 +6,6 @@ from ultralytics.yolo.engine.predictor import BasePredictor
 from ultralytics.yolo.engine.results import Results
 from ultralytics.yolo.utils import DEFAULT_CFG, ROOT
 
-
 class ClassificationPredictor(BasePredictor):
 
     def preprocess(self, img):
