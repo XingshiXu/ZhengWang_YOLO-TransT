@@ -69,8 +69,8 @@ def get_frames(video_name):
 def main():
     # load config
 
-    dataset_root = r'/home/test/wz/dataset/OTB2015/' #Absolute path of the dataset
-    net_path = r'/home/test/wz/TransT/pytracking/networks/transt_N2.pth' #Absolute path of the model
+    dataset_root = r'' #Absolute path of the dataset
+    net_path = r'' #Absolute path of the model
 
     # create model
     net = NetWithBackbone(net_path=net_path, use_gpu=True)
