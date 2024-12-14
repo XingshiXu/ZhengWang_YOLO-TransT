@@ -24,13 +24,13 @@ class TransT(nn.Module):
             num_classes: number of object classes, always 1 for single object tracking
         """
         super().__init__()
-        self.featurefusion_network = featurefusion_network  # 本质上就是transformer,在models.neck里面修改
+        self.featurefusion_network = featurefusion_network  
         hidden_dim = featurefusion_network.d_model
         self.class_embed = MLP(hidden_dim, hidden_dim, num_classes + 1, 3)  # classification  num_classes = 1   hidden_dim =channel(?)
         self.bbox_embed = MLP(hidden_dim, hidden_dim, 4, 3)  # regression x, y, w, h
         self.input_proj = nn.Conv2d(backbone.num_channels, hidden_dim, kernel_size=1)
-        self.backbone = backbone     #主干网络,在models.backbone里面修改
-
+        self.backbone = backbone     
+      
     def forward(self, search, template):  # the size of search:Batchsize, 3, 256, 256     the size of template:Batch, 3, 128, 128
         """ The forward expects a NestedTensor, which consists of:
                - search.tensors: batched images, of shape [batch_size x 3 x H_search x W_search]
@@ -56,20 +56,18 @@ class TransT(nn.Module):
 
         src_search, mask_search= feature_search[-1].decompose()
         assert mask_search is not None
-        src_template, mask_template = feature_template[-1].decompose()  # mask_template (bool) false,mask一开始是用在NLP，语句是有前后关系的，训练的时候，为了模拟测试的时候，用mask把后面语句盖掉，在这里没啥用，都是false
-        # Transformer  DETR earlier than ViT(backbone)VIT系列的可以用作backbone
+        src_template, mask_template = feature_template[-1].decompose()  
+     
         assert mask_template is not None
-        #上面的可以不用管，核心是下面的transformer
 
-        #transformer的几个输入：1.模板template：backbone卷积将输入的通道数变成想要的通道数; 2,4:模板和搜索区域的mask都是false;
-        # 3.搜索区域search：backbone卷积将输入的通道数变成想要的通道数  5,6:最后两个是位置编码
-        # 得到的hs就是Fusion Vectors(tensor)
+
+
         hs = self.featurefusion_network(self.input_proj(src_template), mask_template, self.input_proj(src_search),
-                                        mask_search, pos_template[-1], pos_search[-1])  # transformer
+                                        mask_search, pos_template[-1], pos_search[-1]) 
 
-        #得到分类和回归的结果
-        outputs_class = self.class_embed(hs)  # batch, 2, 32, 32
-        outputs_coord = self.bbox_embed(hs).sigmoid()  # batch 4, 32, 32
+
+        outputs_class = self.class_embed(hs)  
+        outputs_coord = self.bbox_embed(hs).sigmoid()  
         out = {'pred_logits': outputs_class[-1], 'pred_boxes': outputs_coord[-1]}
         return out
 
@@ -135,7 +133,7 @@ class SetCriterion(nn.Module):  # loss
                                     dtype=torch.int64, device=src_logits.device)
         target_classes[idx] = target_classes_o
 
-        #交叉熵计算分类损失
+      
         loss_ce = F.cross_entropy(src_logits.transpose(1, 2), target_classes, self.empty_weight)
         losses = {'loss_ce': loss_ce}
 
@@ -156,7 +154,6 @@ class SetCriterion(nn.Module):  # loss
 
         loss_bbox = F.l1_loss(src_boxes, target_boxes, reduction='none')
 
-        #回归框是一个L1损失和IOU损失
         losses = {}
         losses['loss_bbox'] = loss_bbox.sum() / num_boxes
         giou, iou = box_ops.generalized_box_iou(
@@ -216,7 +213,7 @@ class SetCriterion(nn.Module):  # loss
 
         return losses
 
-#MLP是线性层，不用管
+
 class MLP(nn.Module):
     """ Very simple multi-layer perceptron (also called FFN)"""
 
@@ -235,9 +232,9 @@ class MLP(nn.Module):
 @model_constructor
 def transt_resnet50(settings):
     num_classes = 1
-    #将两个模型实例化后，放到model(Transt)里面，并返回;
-    backbone_net = build_backbone(settings, backbone_pretrained=True)  # change resnet50/resnet101, resnet18
-    featurefusion_network = build_featurefusion_network(settings)  # transformer
+
+    backbone_net = build_backbone(settings, backbone_pretrained=True) 
+    featurefusion_network = build_featurefusion_network(settings) 
 
     model = TransT(
         backbone_net,
