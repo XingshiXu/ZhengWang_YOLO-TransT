@@ -19,7 +19,7 @@ if env_path not in sys.path:
 import argparse
 import os
 
-sys.path.append('/home/test/wz/TransT')  # 添加到python的搜索路径
+sys.path.append('') 
 import cv2
 import torch
 import numpy as np
