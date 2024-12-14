@@ -23,9 +23,9 @@ from pysot_toolkit.trackers.net_wrappers import NetWithBackbone
 
 from ultralytics.yolo.engine.model import YOLO
 if __name__=="__main__":
-    model=YOLO(" ")                               #Path of detecting weight 
+    model=YOLO(" ")                              #Path of detecting weight 
     model.predict(
-                  source=" ",                     #Path of test video
+                  source=" ",                    #Path of test video
                   conf=0.7,
                   save_txt=True,
                   save=True
