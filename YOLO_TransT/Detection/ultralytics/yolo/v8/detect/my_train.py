@@ -19,3 +19,4 @@ if __name__=="__main__":
         amp=True  # Automatic Mixed Precision (AMP) training, choices=[True, False], True runs AMP check
     )
     model.train(**{'cfg': 'ultralytics/yolo/cfg/default.yaml'})
+    
