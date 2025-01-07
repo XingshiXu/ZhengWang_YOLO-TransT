@@ -52,6 +52,6 @@ To find the dataset used in this study, please make sure all files are downloade
 [Google Drive](https://drive.google.com/drive/folders/141ugLESIekckWuz_2YrEqxBS9Tpjxx-i?usp=drive_link ) or [Baidu Netdisk](https://pan.baidu.com/s/1OpxwcvfrQ8b0rWomOy7WIg) (Code: ed35)
   
 ### 8.Results  
-![结果](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Results.jpg)  
-![结果00](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/results01.png)  
- [**Performance display：**](https://www.youtube.com/watch?v=IYBWnM-T8Yc) https://www.youtube.com/watch?v=cj_6e8dhBjo  
+![结果](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Result.jpg)  
+
+ [**Performance display：**](https://www.youtube.com/watch?v=cj_6e8dhBjo) https://www.youtube.com/watch?v=cj_6e8dhBjo  
