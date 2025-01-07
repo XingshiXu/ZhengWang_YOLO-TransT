@@ -1,8 +1,6 @@
 # Detection and tracking of ooestrus dairy cows based on improved YOLOv8n and TransT models ![](https://img.shields.io/badge/Contributor-Zheng_Wang-brightgreen.svg)  ![](https://hits.sh/github.com/XingshiXu/ZhengWang_YOLO-TransT.svg?style=plastic&extraCount=20&color=fe7d37)
 ### Detection and tracking of ooestrus dairy cows based on improved YOLOv8n and TransT models    
   
-**Click** the followed video, please:  
-[![Video Title](https://www.youtube.com/watch?v=IYBWnM-T8Yc)  
 
  
 ### 1.Abstract  
