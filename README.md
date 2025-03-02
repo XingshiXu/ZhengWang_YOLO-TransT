@@ -47,7 +47,8 @@ pip install shapely==1.6.4.post2
     
 ### 7. Dataset  
 To find the dataset used in this study, please make sure all files are downloaded from 
-[Google Drive](https://drive.google.com/drive/folders/141ugLESIekckWuz_2YrEqxBS9Tpjxx-i?usp=drive_link ) or [Baidu Netdisk](https://pan.baidu.com/s/1OpxwcvfrQ8b0rWomOy7WIg) (Code: ed35)
+[Google Drive](https://drive.google.com/drive/folders/141ugLESIekckWuz_2YrEqxBS9Tpjxx-i?usp=drive_link ) or [Baidu Netdisk](https://pan.baidu.com/s/1OpxwcvfrQ8b0rWomOy7WIg) (Code: ed35)  
+Because the relevant funding projects of this study are still ongoing, the complete data set remains under protection. Therefore, at this stage, we released part of the data set.  
   
 ### 8.Results  
 ![结果](https://github.com/XingshiXu/ZhengWang_YOLO-TransT/blob/main/Result.jpg)  
