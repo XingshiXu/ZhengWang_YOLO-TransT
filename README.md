@@ -1,5 +1,5 @@
 # Detection and tracking of ooestrus dairy cows based on improved YOLOv8n and TransT models ![](https://img.shields.io/badge/Contributor-Zheng_Wang-brightgreen.svg)  ![](https://hits.sh/github.com/XingshiXu/ZhengWang_YOLO-TransT.svg?style=plastic&extraCount=20&color=fe7d37)
-### Detection and tracking of ooestrus dairy cows based on improved YOLOv8n and TransT models    
+### [Detection and tracking of oestrus dairy cows based on improved YOLOv8n and TransT models  ](https://www.sciencedirect.com/science/article/pii/S1537511025000315#:~:text=To%20achieve%20accurate%20detection%20and%20real-time%20positioning%20of,YOLOv8n%20and%20Transformer%20Tracking%20%28TransT%29%20models%2C%20was%20) 
   
 
  
